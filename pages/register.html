@@ -17,57 +17,63 @@
         <p>Yuk, daftarkan akunmu sekarang juga!</p>
 
         <form>
-          <label for="name">Nama Lengkap <span>*</span></label>
-          <input type="text" name="name" id="name" required />
+          <div class="confirm">
+            <label for="name">Nama Lengkap <span>*</span></label>
+            <input type="text" name="name" id="name" required />
 
-          <label for="email">E-Mail <span>*</span></label>
-          <input type="email" name="email" id="email" required />
+            <label for="email">E-Mail <span>*</span></label>
+            <input type="email" name="email" id="email" required />
 
-          <label for="text">Jenis Kelamin <span>*</span></label>
-          <select name="gender" id="gender" required>
-            <option value="-"></option>
-            <option value="male">Pria</option>
-            <option value="female">Wanita</option>
-          </select>
-
-          <div class="phone-number">
-            <label for="phone">No. HP <span>*</span></label>
-            <div class="country-flag">
-              <img src="../images/id-flag.png" alt="" />
-            </div>
-
-            <select name="country" id="country" required>
-              <option value="+62">+62</option>
+            <label for="gender">Jenis Kelamin <span>*</span></label>
+            <select name="gender" id="gender">
+              <option value="male">Pria</option>
+              <option value="female">Wanita</option>
             </select>
 
-            <input type="number" name="phone" id="phone" required />
-          </div>
+            <div class="phone-number-container">
+              <div class="country-select">
+                <div class="country-flag">
+                  <img src="../images/id-flag.png" alt="" />
+                </div>
+                <select name="country" id="country">
+                  <option value="id">+62</option>
+                </select>
+              </div>
+              <input type="number" name="phone" id="phone" />
+            </div>
 
-          <div class="password">
-            <label for="password">Kata Sandi <span>*</span></label>
-            <input type="password" name="password" id="password" />
-            <img src="../images/eye-off.png" alt="eye-off-icon" />
-          </div>
+            <div class="password-wraper">
+              <div class="password">
+                <label for="password">Kata Sandi <span>*</span></label>
+                <input type="password" name="password" id="password" />
+                <img src="../images/eye-off.png" alt="eye-off-icon" />
+              </div>
 
-          <div class="password">
-            <label for="password">Kata Sandi <span>*</span></label>
-            <input type="password" name="password" id="password" />
-            <img src="../images/eye-off.png" alt="eye-off-icon" />
+              <div class="password">
+                <label for="password"
+                  >KonfirmasiKata Sandi <span>*</span></label
+                >
+                <input
+                  type="password"
+                  name="password"
+                  id="password-confirmation"
+                />
+                <img src="../images/eye-off.png" alt="eye-off-icon" />
+              </div>
+            </div>
           </div>
 
           <a href="#">Lupa Password?</a>
           <div class="verification">
-            <button type="submit">
-              <a href="../pages/home.html">Daftar</a>
-            </button>
-            <button type="button" id="register">Masuk</button>
+            <button type="button">Daftar</button>
+            <button type="submit" id="register">Masuk</button>
           </div>
 
           <div class="devider">atau</div>
 
           <div class="google-login">
             <button class="google-login-btn">
-              <img src="../images/google-logo.png" alt="google-icon" />Daftar
+              <img src="../images/google-logo.png" alt="google-icon" />Masuk
               dengan Google
             </button>
           </div>
