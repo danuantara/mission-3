@@ -1,0 +1,272 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff7d7cc;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  background-color: #fff;
+  padding: 16px 24px;
+  border-bottom: 1px solid #f1f1f1;
+  box-shadow: 0px 0px 1px 0px #3e434a4f;
+}
+
+header img {
+  width: 145px;
+  height: 23px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 28px 20px;
+  width: 320px;
+  height: 100%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 1px 0px #3e434a4f;
+}
+
+.container h1 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 110%;
+  margin-bottom: 12px;
+}
+
+.container p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  margin-bottom: 24px;
+  color: #333333ad;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+}
+
+.container form label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #333333ad;
+}
+
+.container form label span {
+  color: red;
+}
+
+.container form input {
+  height: 45px;
+  border: 1px solid #3a35411f;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #333333ad;
+  margin-bottom: 20px;
+}
+
+.container form select {
+  height: 65px;
+  border: 1px solid #3a35411f;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  margin-bottom: 20px;
+}
+
+.phone-number {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 20px;
+}
+
+.country-flag {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 45px;
+  height: 54.1px;
+  padding: 4px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  background-color: #3a35411f;
+}
+
+#country {
+  position: absolute;
+  width: 78px;
+  height: 62px;
+  top: 40px;
+  left: 65px;
+  padding: 10px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.phone-number input {
+  margin-left: 160px;
+  top: 40px;
+  left: 80px;
+}
+
+.password {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 20px;
+}
+
+.password img {
+  width: 24px;
+  position: absolute;
+  top: 58%;
+  right: 12px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.container form a {
+  text-align: right;
+  text-decoration: none;
+  color: #333333ad;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  margin-bottom: 24px;
+}
+
+.verification {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.verification button {
+  width: 100%;
+  height: 45px;
+  border: none;
+  border-radius: 10px;
+  background-color: #3ecf4c;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  cursor: pointer;
+}
+
+.verification button a {
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  cursor: pointer;
+}
+
+.verification button:hover {
+  background-color: #e2fcd9cc;
+  color: #3ecf4c;
+}
+
+.verification button:hover a {
+  color: #3ecf4c;
+}
+
+.devider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "DM Sans", sans-serif;
+  color: #999;
+  margin: 20px 0;
+  font-size: 14px;
+}
+
+.devider::after,
+.devider::before {
+  content: "";
+  flex: 1;
+  border-bottom: 2px solid #f1f1f1;
+}
+
+.devider::before {
+  margin-right: 10px;
+}
+
+.devider::after {
+  margin-left: 10px;
+}
+
+.google-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.google-login-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  height: 45px;
+  border: 1px solid #f1f1f1;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #333333ad;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  cursor: pointer;
+  border: 1px solid #3a35411f;
+}
+
+.google-login button img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Desktop */
+@media screen and (min-width: 480px) {
+  header {
+    padding: 16px 120px;
+  }
+  .container {
+    width: 590px;
+    margin: 64px auto;
+    padding: 36px;
+  }
+  .container h1 {
+    font-size: 32px;
+  }
+
+  .container p {
+    font-size: 16px;
+  }
+}

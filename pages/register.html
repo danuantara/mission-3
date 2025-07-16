@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register - videobelajar</title>
+
+    <link rel="stylesheet" href="/style/auth.css" />
+  </head>
+  <body>
+    <header>
+      <img src="../images/logo.png" alt="videobelajar" />
+    </header>
+    <main>
+      <div class="container">
+        <h1>Pendaftaran Akun</h1>
+        <p>Yuk, daftarkan akunmu sekarang juga!</p>
+
+        <form>
+          <label for="name">Nama Lengkap <span>*</span></label>
+          <input type="text" name="name" id="name" required />
+
+          <label for="email">E-Mail <span>*</span></label>
+          <input type="email" name="email" id="email" required />
+
+          <label for="text">Jenis Kelamin <span>*</span></label>
+          <select name="gender" id="gender" required>
+            <option value="-"></option>
+            <option value="male">Pria</option>
+            <option value="female">Wanita</option>
+          </select>
+
+          <div class="phone-number">
+            <label for="phone">No. HP <span>*</span></label>
+            <div class="country-flag">
+              <img src="../images/id-flag.png" alt="" />
+            </div>
+
+            <select name="country" id="country" required>
+              <option value="+62">+62</option>
+            </select>
+
+            <input type="number" name="phone" id="phone" required />
+          </div>
+
+          <div class="password">
+            <label for="password">Kata Sandi <span>*</span></label>
+            <input type="password" name="password" id="password" />
+            <img src="../images/eye-off.png" alt="eye-off-icon" />
+          </div>
+
+          <div class="password">
+            <label for="password">Kata Sandi <span>*</span></label>
+            <input type="password" name="password" id="password" />
+            <img src="../images/eye-off.png" alt="eye-off-icon" />
+          </div>
+
+          <a href="#">Lupa Password?</a>
+          <div class="verification">
+            <button type="submit">
+              <a href="../pages/home.html">Daftar</a>
+            </button>
+            <button type="button" id="register">Masuk</button>
+          </div>
+
+          <div class="devider">atau</div>
+
+          <div class="google-login">
+            <button class="google-login-btn">
+              <img src="../images/google-logo.png" alt="google-icon" />Daftar
+              dengan Google
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
